@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dev.finance$ | Controle suas finanças</title>
 
-  <link rel="stylesheet" href="/Styles/style.css">
+  <link rel="stylesheet" href="/Styles/lendings.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
@@ -22,7 +22,7 @@
 
       <div class="card">
         <h3>
-          <span>Entradas</span>
+          <span>Requisições</span>
           <img src="./assets/income.svg" alt="Imagem de Entradas">
         </h3>
         <p id="incomeDisplay">R$ 0,00</p>
@@ -30,7 +30,7 @@
 
       <div class="card">
         <h3>
-          <span>Saídas</span>
+          <span>Pagamentos</span>
           <img src="./assets/expense.svg" alt="Imagem de Saídas">
         </h3>
         <p id="expenseDisplay">R$ 0,00</p>
@@ -38,7 +38,7 @@
 
       <div class="card total">
         <h3>
-          <span>total</span>
+          <span>Dependências</span>
           <img src="./assets/total.svg" alt="Imagem de Total">
         </h3>
         <p id="totalDisplay">R$ 0,00</p>
@@ -51,7 +51,7 @@
 
       <a href="#"
       onclick="Modal.open()" 
-      class="button new">+ Nova Transação</a>
+      class="button new">+ Novo Empréstimo</a>
 
       <table id="data-table">
         <thead>
@@ -72,7 +72,7 @@
   <div class="modal-overlay ">
     <div class="modal">
       <div id="form">
-        <h2>Nova Transação</h2>
+        <h2>Novo Empréstimo/Pagamento</h2>
         <form action="" onsubmit="Form.submit(event)" >
           <div class="input-group">
             <label 
@@ -97,8 +97,8 @@
               id="amount"
               placeholder="0,00"
             />
-            <small class="help">Use o sinal - (negativo) para despesas e , 
-              (vírgula para casas decimais</small> 
+            <small class="help">Use o sinal - (negativo) para pagar uma parcela de emprestimo e , 
+              (vírgula para casas decimais)</small> 
           </div> 
 
           <div class="input-group">
@@ -127,7 +127,7 @@
     <p>dev.finance$</p>
   </footer>
 
-  <script src="/Scripts/scripts.js"> 
+  <script src="/Scripts/lendings.js"> 
     
   </script>
 

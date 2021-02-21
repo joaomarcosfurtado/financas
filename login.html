@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dev.finance$ | Controle suas finanças</title>
+
+  <link rel="stylesheet" href="./Styles/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2b6157aa32.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="page-landing">
+  
+  <div class="container">
+    <div class="content first-content">
+      <div class="first-column">
+        <h2 class="title title-primary"> Missed you Dev.u$er!</h2>  
+        <p class="description description-primary">Seja Bem Vindo ao dev.finance$</p>
+        <p class="description description-primary">Faça Login para acessar suas Informações</p>
+        <button id="signin" class="btn btn-primary">Entrar</button>
+      </div> <!-- first content -->
+      <div class="second-column">
+        <h2 class="title title-secondary">Faça parte da família</h2>
+        <h2 class="title title-secondary">dev.finance$</h2>
+        <div class="social-media">
+          <ul class="list-social-media">
+            
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-facebook-f"></i>
+              </li>
+            </a>
+            
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+            </a>
+            
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+            </a>
+
+          </ul>
+        </div> <!-- Social Media -->
+        <p class="description description-secondary">Ou utilize seu e-mail para registro</p>
+        
+        <form class="form" onsubmit="Form.submitCreateUser(event)">
+          <label class="label-input" for="s">
+            <i class="far fa-user icon-modify"></i>
+            <input 
+              type="text" 
+              placeholder="Nome"
+              id="username"
+            />
+              
+          </label>
+          
+          <label class="label-input" for="">
+            <i class="far fa-id-card icon-modify"></i>
+            <input 
+              type="number" 
+              placeholder="CPF"
+              id="cpf"
+            />
+          </label>
+          
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input 
+              type="email" 
+              placeholder="E-mail"
+              id="email"
+            /> 
+          </label>
+          
+          <label class="label-input" for=""> 
+            <i class="fas fa-lock icon-modify"></i>
+            <input 
+              type="password" 
+              placeholder="Senha"
+              id="password"
+            />
+          </label>
+          
+          <button class="btn btn-secondary">Cadastre-se</button>
+        </form>
+      </div> <!-- Second column-->
+    </div> <!-- First Content -->
+
+    <div class="content second-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Olá! dev.u$er</h2>  
+        <p class="description description-primary">Você ainda não é um dev.u$er?</p>
+        <p class="description description-primary">Cadastre-se e faça parta da nossa família</p>
+        <button id="signup" class="btn btn-primary">Cadastre-se</button>
+      </div> <!-- first content -->
+      <div class="second-column">
+        <h2 class="title title-secondary">Entre para mais Informações</h2>
+        <div class="social-media">
+          <ul class="list-social-media">
+            
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-facebook-f"></i>
+              </li>
+            </a>
+            
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+            </a>
+            
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+            </a>
+
+          </ul>
+        </div> <!-- Social Media -->
+        <p class="description description-secondary">Entre também com seu E-mail ou CPF </p>
+        <form class="form" onsubmit="acessForm.submitValidateUser(event)">
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input 
+              type="text" 
+              placeholder="E-mail ou CPF"
+              id="acessEmailCPF"
+            > 
+          </label>
+          
+          <label class="label-input" for=""> 
+            <i class="fas fa-lock icon-modify"></i>
+            <input 
+              type="password" 
+              placeholder="Senha"
+              id="acessPassword"
+            >
+          </label>
+          <a class="password" href="#">Esqueci minha senha</a>
+          <button class="btn btn-secondary">Login</button>
+        </form>
+      </div> <!-- Second column-->
+    </div> <!-- Second Content-->
+
+  </div>
+    <script src="/Scripts/login.js"></script>
+</body>
+</html>
